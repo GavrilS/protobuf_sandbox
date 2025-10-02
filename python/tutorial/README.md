@@ -10,5 +10,5 @@ The tutorial is going to build a very simple address book application that can r
 protoc --proto_path=./python/tutorial/ --python_out=./python/tutorial/ ./python/tutorial/addressbook.proto
 
 * Notes:
-    - we need to provide the path to our source directory(where our application code lives, the current directory is used by default), the destination directory(where we want the generated code to be put), and the path to our .proto file
+    - we need to provide the path to our source directory(where our application code lives, the current directory is used by default), the destination directory(where we want the generated code to be put), and the path to our .proto file; the generated code will go into a file called addressbook_pb2.py with the above listed .proto file and the --python_out option
     - the option --python_out is used here, because we are using python in our app; similiar options exist for other languages
